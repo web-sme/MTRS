@@ -194,6 +194,102 @@
   }
 }
 
+
+/* v8 premium location */
+.location-premium-section{
+  background:
+    radial-gradient(circle at top left,rgba(215,166,63,.13),transparent 30%),
+    linear-gradient(180deg,#f6f0df,#fffaf0);
+}
+.location-premium-card{
+  max-width:1120px;
+  margin:0 auto;
+  background:#fff;
+  border:1px solid rgba(7,61,42,.09);
+  border-radius:34px;
+  padding:34px;
+  box-shadow:0 28px 80px rgba(7,61,42,.10);
+}
+.location-premium-copy{
+  max-width:760px;
+  margin:0 auto 28px;
+  text-align:center;
+}
+.location-kicker{
+  display:block;
+  color:var(--gold);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.location-premium-copy h2{
+  font-family:"Playfair Display",serif;
+  color:var(--green);
+  font-size:clamp(38px,5vw,62px);
+  line-height:1.06;
+  margin-bottom:14px;
+}
+.location-premium-copy p{
+  color:var(--muted);
+  line-height:1.8;
+  font-size:17px;
+  margin-bottom:24px;
+}
+.location-actions{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-bottom:4px;
+}
+.location-premium-image{
+  border-radius:26px;
+  overflow:hidden;
+  border:1px solid rgba(215,166,63,.22);
+  background:#eef3ed;
+}
+.location-premium-image img{
+  width:100%;
+  aspect-ratio:16/9;
+  height:auto;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  filter:saturate(1.04) contrast(1.04) brightness(1.02);
+}
+@media(max-width:980px){
+  .location-premium-card{
+    padding:22px;
+    border-radius:28px;
+  }
+  .location-premium-copy{
+    text-align:left;
+    margin-bottom:22px;
+  }
+  .location-premium-copy h2{
+    font-size:42px;
+  }
+  .location-premium-copy p{
+    font-size:16px;
+  }
+  .location-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+  .location-actions .btn{
+    width:100%;
+  }
+  .location-premium-image{
+    border-radius:22px;
+  }
+  .location-premium-image img{
+    aspect-ratio:16/10;
+  }
+}
+
 </style></head><body>
 <header class="header"><div class="container nav"><a href="#" class="brand"><div class="logo-mark"><img src="assets/logo-mtrs.jpg" alt="Logo MTRS"></div>
       <div>
@@ -208,35 +304,21 @@
 <section class="section white" id="cawangan"><div class="container"><div class="head"><div class="kicker">Cawangan Kami</div><h2>Cawangan di bawah MTRS.</h2><p>MTRS turut mempunyai cawangan pendidikan Islam untuk pelajar dan kanak-kanak di beberapa lokasi.</p></div><div class="branch-grid"><div class="branch-card"><div class="branch-img"><img src="assets/branch-ptkl.jpg"></div><div class="branch-body"><h3>Pondok Tahfiz Kampung Lukut</h3><div class="loc">Kota Tinggi, Johor</div><p>Pusat pendidikan hafazan Al-Quran dan pengajian agama berasaskan pondok yang menekankan disiplin, adab dan ilmu.</p></div></div><div class="branch-card"><div class="branch-img"><img src="assets/branch-tadika.jpg"></div><div class="branch-body"><h3>Tadika Al-Kasyfi (Aulad Soleh)</h3><div class="loc">Bandar Cemerlang, Tiram, Johor</div><p>Pendidikan awal kanak-kanak dengan asas nilai Islam, adab dan pembelajaran yang membentuk generasi soleh.</p></div></div></div></div></section>
 <section class="section soft" id="infaq"><div class="container infaq-wrap"><div class="infaq-visual"><div class="infaq-copy"><div class="kicker">Sahabat Al-Quran</div><h3>Jadilah Sahabat Al-Quran.</h3><p>Sumbangan anda membantu kelangsungan operasi madrasah, kebajikan pelajar dan pembangunan fasiliti demi melahirkan generasi pewaris Al-Quran.</p></div></div><div class="infaq-card"><div class="kicker">Salurkan Infaq</div><h2 class="serif" style="font-size:42px;color:var(--g);line-height:1.08;margin:8px 0 18px">Infaq Pendidikan Huffaz</h2><div class="bank-badge">Maybank</div><div class="account">5513 3354 6961</div><div class="account-name">Madrasah Tahfiz Riyadhus Solihin</div><div class="qr-box"><img src="assets/qr-duitnow.jpg"><p>Imbas QR DuitNow untuk berinfaq. Sila hantar resit kepada pentadbiran untuk rekod sumbangan.</p></div><a class="btn btn-green" href="https://wa.me/60197816364">Hantar Resit Infaq</a></div></div></section>
 <section class="section white" id="pembangunan"><div class="container"><div class="head"><div class="kicker">Projek Pembangunan</div><h2>Sumbangan anda memberi manfaat kepada pelajar.</h2><p>Infaq turut membantu penambahbaikan fasiliti agar suasana pembelajaran lebih selesa, selamat dan kondusif.</p></div><div class="develop-grid"><div class="dev"><div>🚿</div><b>Penambahan Bilik Air / Tandas</b></div><div class="dev"><div>🍳</div><b>Penambahbaikan Dapur</b></div><div class="dev"><div>🏠</div><b>Pembaikan Siling & Atap</b></div><div class="dev"><div>🚪</div><b>Pagar Keselamatan</b></div><div class="dev"><div>📚</div><b>Kemudahan Pelajar</b></div></div></div></section>
-<section class="section soft" id="hubungi">
+<section class="section soft location-premium-section" id="hubungi">
   <div class="container">
-    <div class="section-head">
-      <span>Lokasi MTRS</span>
-      <h2>Lokasi Maahad Tahfiz Riyadhus Solihin</h2>
-      <p>Alamat utama MTRS di Kampung Bakar Batu, Johor Bahru.</p>
-    </div>
-
-    <div class="locked-location-photo">
-      <img src="assets/location-building.jpg" alt="Bangunan Maahad Tahfiz Riyadhus Solihin">
-    </div>
-
-    <div class="locked-location-cards">
-      <div class="contact-card">
-        <h3>Lokasi MTRS</h3>
+    <div class="location-premium-card">
+      <div class="location-premium-copy">
+        <span class="location-kicker">Lokasi & Hubungi</span>
+        <h2>Lokasi MTRS</h2>
         <p>157, Jalan Pantai, Kampung Bakar Batu, 80150 Johor Bahru, Johor Darul Ta'zim.</p>
-        <br>
-        <a class="btn btn-green" href="https://maps.app.goo.gl/425X3VnoLF3rn8th7" target="_blank">Lihat Google Maps</a>
+        <div class="location-actions">
+          <a class="btn btn-green" href="https://maps.app.goo.gl/425X3VnoLF3rn8th7" target="_blank">Lihat Google Maps</a>
+          <a class="btn btn-gold" href="https://wa.me/60197816364">WhatsApp Mudir</a>
+        </div>
       </div>
 
-      <div class="contact-card">
-        <h3>Hubungi Kami</h3>
-        <ul>
-          <li>📞 Mudir: <b>019-781 6364</b></li>
-          <li>☎️ Pejabat: <b>011-7076 1190</b></li>
-          <li>📍 Johor Bahru, Johor</li>
-        </ul>
-        <br>
-        <a class="btn btn-gold" href="https://wa.me/60197816364">WhatsApp Mudir</a>
+      <div class="location-premium-image">
+        <img src="assets/location-building.jpg" alt="Bangunan Maahad Tahfiz Riyadhus Solihin">
       </div>
     </div>
   </div>
